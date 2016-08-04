@@ -13,10 +13,19 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="onClickTabLayout"
+        android:text="TabLayout 顶部标签页"
         android:textSize="@dimen/sp_16"
         android:layout_margin="@dimen/dp_16"
         android:padding="@dimen/dp_16"
-        android:onClick="onClickTabLayout"/>
+        android:onClick="onClickTabLayoutTop"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TabLayout 底部菜单页"
+        android:textSize="@dimen/sp_16"
+        android:layout_margin="@dimen/dp_16"
+        android:padding="@dimen/dp_16"
+        android:onClick="onClickTabLayoutBottom"/>
 
 </LinearLayout>

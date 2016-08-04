@@ -14,8 +14,12 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    public void onClickTabLayout(View v){
-        startActivity(new Intent(this, TabLayoutActivity.class));
+    public void onClickTabLayoutTop(View v){
+        startActivity(new Intent(this, TabLayoutTopActivity.class));
+    }
+
+    public void onClickTabLayoutBottom(View v){
+        startActivity(new Intent(this, TabLayoutBottomActivity.class));
     }
 
 }

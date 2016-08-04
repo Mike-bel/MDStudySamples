@@ -20,7 +20,12 @@
         </activity>
 
         <activity
-            android:name=".TabLayoutActivity"
+            android:name=".TabLayoutTopActivity"
+            android:label="TabLayoutSamples"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".TabLayoutBottomActivity"
             android:label="TabLayoutSamples"
             android:screenOrientation="portrait"/>
 

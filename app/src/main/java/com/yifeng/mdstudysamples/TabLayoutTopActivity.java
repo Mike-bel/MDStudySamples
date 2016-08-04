@@ -19,8 +19,9 @@ import java.util.List;
  * Created by yifeng on 16/8/3.
  *
  */
-public class TabLayoutActivity extends BaseActivity {
+public class TabLayoutTopActivity extends BaseActivity {
 
+    private TabLayout mTabTl01;
     private TabLayout mTabTl;
     private ViewPager mContentVp;
 
@@ -31,7 +32,7 @@ public class TabLayoutActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tab_layout);
+        setContentView(R.layout.activity_tab_layout_top);
 
         mTabTl = (TabLayout) findViewById(R.id.tl_tab);
         mContentVp = (ViewPager) findViewById(R.id.vp_content);
