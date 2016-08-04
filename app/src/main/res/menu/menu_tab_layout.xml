@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab_add"
+        android:title="add"
+        android:icon="@mipmap/ic_toolbar_add"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/tab_mode_fixed"
+        android:title="MODE_FIXED"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/tab_mode_scrollable"
+        android:title="MODE_SCROLLABLE"
+        app:showAsAction="never"/>
+
+</menu>
