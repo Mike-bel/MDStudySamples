@@ -22,4 +22,8 @@ public class MainActivity extends BaseActivity {
         startActivity(new Intent(this, TabLayoutBottomActivity.class));
     }
 
+    public void onClickSnackbar(View v){
+        startActivity(new Intent(this, SnackbarActivity.class));
+    }
+
 }
