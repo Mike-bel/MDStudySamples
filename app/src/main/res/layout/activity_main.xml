@@ -1,49 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.yifeng.mdstudysamples.MainActivity">
 
-    <include
-        layout="@layout/include_toolbar"/>
+    <include layout="@layout/include_toolbar" />
 
-    <Button
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="?borderlessButtonStyle"
-        android:text="TabLayout 顶部标签页"
-        android:textAllCaps="false"
-        android:textSize="@dimen/sp_16"
-        android:layout_margin="@dimen/dp_16"
-        android:padding="@dimen/dp_16"
-        android:onClick="onClickTabLayoutTop"
-        android:background="@drawable/state_press_white"/>
+        android:background="@color/white"
+        android:paddingTop="@dimen/dp_16">
 
-    <Button
+        <TextView
+            android:id="@+id/tv_label_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:background="@drawable/shape_circle_blue"
+            android:gravity="center"
+            android:text="Tab"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <Button
+            android:id="@+id/btn_tab_top"
+            style="?borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_toRightOf="@+id/tv_label_tab"
+            android:background="@color/white"
+            android:textColor="@color/state_press_black"
+            android:gravity="left|center_vertical"
+            android:onClick="onClickTabLayoutTop"
+            android:text="TabLayout 顶部标签页"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_16" />
+
+        <Button
+            android:id="@+id/btn_tab_bottom"
+            style="?borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:layout_alignLeft="@id/btn_tab_top"
+            android:layout_below="@id/tv_label_tab"
+            android:layout_toRightOf="@id/tv_label_tab"
+            android:background="@color/white"
+            android:textColor="@color/state_press_black"
+            android:gravity="left|center_vertical"
+            android:onClick="onClickTabLayoutBottom"
+            android:text="TabLayout 底部菜单页"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_alignLeft="@id/btn_tab_top"
+            android:layout_below="@id/btn_tab_bottom"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="?borderlessButtonStyle"
-        android:text="TabLayout 底部菜单页"
-        android:textAllCaps="false"
-        android:textSize="@dimen/sp_16"
-        android:layout_margin="@dimen/dp_16"
-        android:padding="@dimen/dp_16"
-        android:onClick="onClickTabLayoutBottom"
-        android:background="@drawable/state_press_white"/>
+        android:background="@color/white"
+        android:paddingTop="@dimen/dp_16">
 
-    <Button
+        <TextView
+            android:id="@+id/tv_label_snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:background="@drawable/shape_circle_blue"
+            android:gravity="center"
+            android:text="Snack"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <Button
+            android:id="@+id/btn_tab_snack"
+            style="?borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_toRightOf="@+id/tv_label_snack"
+            android:background="@color/white"
+            android:textColor="@color/state_press_black"
+            android:gravity="left|center_vertical"
+            android:onClick="onClickSnackbar"
+            android:text="Snackbar"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@id/tv_label_snack"
+            android:layout_alignLeft="@id/btn_tab_snack"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="?borderlessButtonStyle"
-        android:text="Snackbar"
-        android:textAllCaps="false"
-        android:textSize="@dimen/sp_16"
-        android:layout_margin="@dimen/dp_16"
-        android:padding="@dimen/dp_16"
-        android:onClick="onClickSnackbar"
-        android:background="@drawable/state_press_white"/>
+        android:background="@color/white"
+        android:paddingTop="@dimen/dp_16">
+
+        <TextView
+            android:id="@+id/tv_label_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:background="@drawable/shape_circle_blue"
+            android:gravity="center"
+            android:text="FAB"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <Button
+            android:id="@+id/btn_tab_fab"
+            style="?borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_toRightOf="@+id/tv_label_fab"
+            android:background="@color/white"
+            android:textColor="@color/state_press_black"
+            android:gravity="left|center_vertical"
+            android:onClick="onClickFab"
+            android:text="FloatingActionButton"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@id/tv_label_fab"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_alignLeft="@id/btn_tab_fab"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
 
 </LinearLayout>

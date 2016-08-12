@@ -26,4 +26,8 @@ public class MainActivity extends BaseActivity {
         startActivity(new Intent(this, SnackbarActivity.class));
     }
 
+    public void onClickFab(View v){
+        startActivity(new Intent(this, FabActivity.class));
+    }
+
 }

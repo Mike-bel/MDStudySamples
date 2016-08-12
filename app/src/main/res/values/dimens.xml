@@ -6,4 +6,6 @@
 
     <dimen name="sp_16">16sp</dimen>
 
+    <dimen name="px_1">1px</dimen>
+
 </resources>
