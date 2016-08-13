@@ -12,6 +12,9 @@ Android Material Design 材料设计风格的系统性学习案例
 ## Snackbar
 博客地址：[Android 一文告诉你到底是用Dialog，Snackbar，还是Toast](http://www.jianshu.com/p/9eb3b17b0e77)
 
+## FloatingActionButton
+博客地址：[Android FloatingActionButton 重要的操作不要太多，一个就好](http://www.jianshu.com/p/5328b2eee827)
+
 ## TODO
 
 MD风格登录页：

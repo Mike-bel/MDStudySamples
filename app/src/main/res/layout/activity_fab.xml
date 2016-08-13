@@ -6,6 +6,7 @@
     android:orientation="vertical">
 
     <include
+        android:id="@+id/layout_toolbar"
         layout="@layout/include_toolbar"/>
 
     <android.support.design.widget.FloatingActionButton
@@ -14,7 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp_16"
         android:src="@mipmap/ic_toolbar_add"
-        app:useCompatPadding="true"/>
+        android:clickable="true"
+        app:backgroundTint="@color/fab_ripple"/>
 
 </RelativeLayout>
