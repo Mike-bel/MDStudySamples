@@ -39,6 +39,11 @@
             android:label="SnackbarSamples"
             android:screenOrientation="portrait"/>
 
+        <activity
+            android:name=".AppBarLayoutActivity"
+            android:label="SnackbarSamples"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

@@ -8,5 +8,6 @@
     app:title="@string/app_name"
     app:theme="@style/OverFlowMenuTheme"
     app:popupTheme="@style/AppTheme"
-    android:background="@color/blue" />
+    android:background="@color/blue"
+    app:layout_scrollFlags="scroll|enterAlways"/>
 

@@ -21,7 +21,6 @@ import java.util.List;
  */
 public class TabLayoutTopActivity extends BaseActivity {
 
-    private TabLayout mTabTl01;
     private TabLayout mTabTl;
     private ViewPager mContentVp;
 
@@ -75,6 +74,7 @@ public class TabLayoutTopActivity extends BaseActivity {
                 tabIndicators.add("Tab " + tabIndicators.size());
                 tabFragments.add(TabContentFragment.newInstance(tabIndicators.get(tabIndicators.size()-1)));
                 contentAdapter.notifyDataSetChanged();
+                mTabTl.setupWithViewPager(mContentVp);
                 return true;
 
             case R.id.tab_mode_fixed:
@@ -108,6 +108,7 @@ public class TabLayoutTopActivity extends BaseActivity {
         public CharSequence getPageTitle(int position) {
             return tabIndicators.get(position);
         }
+
     }
 
 }

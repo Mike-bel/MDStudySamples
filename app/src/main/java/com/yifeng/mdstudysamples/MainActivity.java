@@ -30,4 +30,8 @@ public class MainActivity extends BaseActivity {
         startActivity(new Intent(this, FabActivity.class));
     }
 
+    public void onClickAbl(View v){
+        startActivity(new Intent(this, AppBarLayoutActivity.class));
+    }
+
 }
