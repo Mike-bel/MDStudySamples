@@ -41,7 +41,14 @@ public class SnackbarActivity extends BaseActivity {
     }
 
     public void onClickSnackbar(View v){
-        Snackbar.make(this.findViewById(android.R.id.content), "This is a Snackbar", Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(this.findViewById(android.R.id.content), "This is a Snackbar", Snackbar.LENGTH_SHORT)
+                .setAction("Cancel", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                })
+                .show();
     }
 
     public void onClickToast(View v){

@@ -1,39 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dl_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <include
-            layout="@layout/include_toolbar" />
-
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tl_indicator"
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content">
 
-    </android.support.design.widget.AppBarLayout>
+            <include layout="@layout/include_toolbar" />
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/vp_content"
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_16"
+            android:onClick="onClickFab"
+            android:src="@mipmap/ic_toolbar_add"
+            app:backgroundTint="@color/fab_ripple"
+            app:layout_anchor="@id/vp_content"
+            app:layout_anchorGravity="bottom|right|end" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dp_16"
-        android:src="@mipmap/ic_toolbar_add"
-        android:onClick="onClickFab"
-        app:layout_anchor="@id/vp_content"
-        app:layout_anchorGravity="bottom|right|end"
-        app:backgroundTint="@color/fab_ripple"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"/>
 
-</android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
