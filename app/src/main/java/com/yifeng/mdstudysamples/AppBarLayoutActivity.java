@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -25,6 +26,12 @@ public class AppBarLayoutActivity extends BaseActivity {
         mContentRv = (RecyclerView) findViewById(R.id.rv_content);
         mContentRv.setLayoutManager(new LinearLayoutManager(this));
         mContentRv.setAdapter(new ContentAdapter());
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_samples, menu);
+        return true;
     }
 
     private class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentHolder>{
