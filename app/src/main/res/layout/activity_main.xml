@@ -220,7 +220,7 @@
             android:background="@color/white"
             android:textColor="@color/state_press_black"
             android:gravity="left|center_vertical"
-            android:onClick="onClickAbl"
+            android:onClick="onClickBehavior"
             android:text="CoordinatorLayout"
             android:textAllCaps="false"
             android:textSize="@dimen/sp_16" />

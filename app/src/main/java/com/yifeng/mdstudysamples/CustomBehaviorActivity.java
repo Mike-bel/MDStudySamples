@@ -14,14 +14,14 @@ import android.widget.TextView;
  * Created by yifeng on 16/8/10.
  *
  */
-public class AppBarLayoutActivity extends BaseActivity {
+public class CustomBehaviorActivity extends BaseActivity {
 
     private RecyclerView mContentRv;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_app_bar_layout);
+        setContentView(R.layout.activity_custom_behavior);
 
         mContentRv = (RecyclerView) findViewById(R.id.rv_content);
         mContentRv.setLayoutManager(new LinearLayoutManager(this));
@@ -38,17 +38,17 @@ public class AppBarLayoutActivity extends BaseActivity {
 
         @Override
         public ContentAdapter.ContentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return new ContentHolder(LayoutInflater.from(AppBarLayoutActivity.this).inflate(android.R.layout.simple_list_item_1, parent, false));
+            return new ContentHolder(LayoutInflater.from(CustomBehaviorActivity.this).inflate(android.R.layout.simple_list_item_1, parent, false));
         }
 
         @Override
         public void onBindViewHolder(ContentAdapter.ContentHolder holder, int position) {
-            holder.itemTv.setText("Item " + position);
+            holder.itemTv.setText("Item 00");
         }
 
         @Override
         public int getItemCount() {
-            return 50;
+            return 100;
         }
 
         class ContentHolder extends RecyclerView.ViewHolder{

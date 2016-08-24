@@ -7,7 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Base.AppTheme">
 
         <activity
             android:name=".MainActivity"
@@ -41,6 +41,11 @@
 
         <activity
             android:name=".AppBarLayoutActivity"
+            android:label="SnackbarSamples"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".CustomBehaviorActivity"
             android:label="SnackbarSamples"
             android:screenOrientation="portrait"/>
 

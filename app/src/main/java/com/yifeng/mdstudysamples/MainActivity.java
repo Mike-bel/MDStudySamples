@@ -34,4 +34,8 @@ public class MainActivity extends BaseActivity {
         startActivity(new Intent(this, AppBarLayoutActivity.class));
     }
 
+    public void onClickBehavior(View v){
+        startActivity(new Intent(this, CustomBehaviorActivity.class));
+    }
+
 }
