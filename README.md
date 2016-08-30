@@ -16,10 +16,15 @@ Android Material Design 材料设计风格的系统性学习案例
 博客地址：[Android FloatingActionButton 重要的操作不要太多，一个就好](http://www.jianshu.com/p/5328b2eee827)
 
 ## AppBarLayout
-博客地址：[Android 初识AppBarLayout 和 CoordinatorLayout](http://www.jianshu.com/p/ab04627cce58)
+博客地址：
+- [Android 初识AppBarLayout 和 CoordinatorLayout](http://www.jianshu.com/p/ab04627cce58)
+- [Android 详细分析AppBarLayout的五种ScrollFlags](http://www.jianshu.com/p/7caa5f4f49bd)
 
 ## CoordinatorLayout
-博客地址：[Android 初识AppBarLayout 和 CoordinatorLayout](http://www.jianshu.com/p/ab04627cce58)
+博客地址：
+- [Android 初识AppBarLayout 和 CoordinatorLayout](http://www.jianshu.com/p/ab04627cce58)
+- [Android CoordinatorLayout实战案例学习《一》](http://www.jianshu.com/p/4b0f3c80ebc9)
+- [Android CoordinatorLayout 实战案例学习《二》](http://www.jianshu.com/p/360fd368936d)
 
 ## TODO
 
