@@ -10,22 +10,25 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 /**
  * Created by yifeng on 16/8/10.
  *
  */
-public class CustomBehaviorActivity extends BaseActivity {
+public class BehaviorNestedActivity extends BaseActivity {
 
     private RecyclerView mContentRv;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_custom_behavior);
+        setContentView(R.layout.activity_custom_behavior_nested);
 
         mContentRv = (RecyclerView) findViewById(R.id.rv_content);
         mContentRv.setLayoutManager(new LinearLayoutManager(this));
         mContentRv.setAdapter(new ContentAdapter());
+
     }
 
     @Override
@@ -38,12 +41,12 @@ public class CustomBehaviorActivity extends BaseActivity {
 
         @Override
         public ContentAdapter.ContentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return new ContentHolder(LayoutInflater.from(CustomBehaviorActivity.this).inflate(android.R.layout.simple_list_item_1, parent, false));
+            return new ContentHolder(LayoutInflater.from(BehaviorNestedActivity.this).inflate(android.R.layout.simple_list_item_1, parent, false));
         }
 
         @Override
         public void onBindViewHolder(ContentAdapter.ContentHolder holder, int position) {
-            holder.itemTv.setText("Item 00");
+            holder.itemTv.setText("Item "+new DecimalFormat("00").format(position));
         }
 
         @Override

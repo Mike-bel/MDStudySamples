@@ -10,6 +10,7 @@ import android.view.View;
 public class FloatingActionButtonBehavior extends CoordinatorLayout.Behavior<FloatingActionButton> {
 
     public FloatingActionButtonBehavior(Context context, AttributeSet attrs) {
+
     }
 
     @Override

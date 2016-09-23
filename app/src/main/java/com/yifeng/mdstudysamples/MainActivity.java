@@ -34,8 +34,12 @@ public class MainActivity extends BaseActivity {
         startActivity(new Intent(this, AppBarLayoutActivity.class));
     }
 
-    public void onClickBehavior(View v){
-        startActivity(new Intent(this, CustomBehaviorActivity.class));
+    public void onClickBehaviorDependent(View v){
+        startActivity(new Intent(this, BehaviorDependentActivity.class));
+    }
+
+    public void onClickBehaviorNested(View v){
+        startActivity(new Intent(this, BehaviorNestedActivity.class));
     }
 
 }

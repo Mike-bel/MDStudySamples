@@ -19,7 +19,8 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:expandedTitleMarginStart="48dp"
-            app:expandedTitleMarginEnd="64dp">
+            app:expandedTitleMarginEnd="64dp"
+            android:fitsSystemWindows="true">
 
             <ImageView
                 android:layout_width="match_parent"

@@ -11,9 +11,9 @@ import android.view.View;
  * Created by yifeng on 16/8/23.
  *
  */
-public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
+public class NestedFABBehavior extends FloatingActionButton.Behavior {
 
-    public ScrollAwareFABBehavior(Context context, AttributeSet attrs) {
+    public NestedFABBehavior(Context context, AttributeSet attrs) {
         super();
     }
 
@@ -28,8 +28,10 @@ public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
     public void onNestedScroll(CoordinatorLayout coordinatorLayout, FloatingActionButton child, View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed) {
         super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
         if (dyConsumed > 0 && child.getVisibility() == View.VISIBLE) {
+            //系统FAB控件提供的隐藏动画
             child.hide();
         } else if (dyConsumed < 0 && child.getVisibility() != View.VISIBLE) {
+            //系统FAB控件提供的显示动画
             child.show();
         }
     }

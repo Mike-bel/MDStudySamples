@@ -42,10 +42,16 @@
         <activity
             android:name=".AppBarLayoutActivity"
             android:label="SnackbarSamples"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".BehaviorNestedActivity"
+            android:label="SnackbarSamples"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".CustomBehaviorActivity"
+            android:name=".BehaviorDependentActivity"
             android:label="SnackbarSamples"
             android:screenOrientation="portrait"/>
 

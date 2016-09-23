@@ -211,7 +211,7 @@
             android:textSize="@dimen/sp_16" />
 
         <Button
-            android:id="@+id/btn_tab_cl"
+            android:id="@+id/btn_tab_cl_dependent"
             style="?borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_56"
@@ -220,17 +220,33 @@
             android:background="@color/white"
             android:textColor="@color/state_press_black"
             android:gravity="left|center_vertical"
-            android:onClick="onClickBehavior"
-            android:text="CoordinatorLayout"
+            android:onClick="onClickBehaviorDependent"
+            android:text="CoordinatorLayout.Behavior 之 Dependent"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_16" />
+
+        <Button
+            android:id="@+id/btn_tab_cl_nested"
+            style="?borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_below="@id/btn_tab_cl_dependent"
+            android:layout_toRightOf="@+id/tv_label_cl"
+            android:background="@color/white"
+            android:textColor="@color/state_press_black"
+            android:gravity="left|center_vertical"
+            android:onClick="onClickBehaviorNested"
+            android:text="CoordinatorLayout.Behavior 之 Nested"
             android:textAllCaps="false"
             android:textSize="@dimen/sp_16" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/px_1"
-            android:layout_below="@id/tv_label_cl"
+            android:layout_below="@id/btn_tab_cl_nested"
             android:layout_marginTop="@dimen/dp_16"
-            android:layout_alignLeft="@id/btn_tab_cl"
+            android:layout_alignLeft="@id/btn_tab_cl_nested"
             android:background="@color/gray" />
 
     </RelativeLayout>

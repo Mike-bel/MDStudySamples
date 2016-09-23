@@ -3,6 +3,7 @@
     <dimen name="dp_16">16dp</dimen>
     <dimen name="dp_48">48dp</dimen>
     <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_200">200dp</dimen>
 
     <dimen name="sp_16">16sp</dimen>
 
