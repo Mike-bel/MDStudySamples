@@ -55,6 +55,11 @@
             android:label="SnackbarSamples"
             android:screenOrientation="portrait"/>
 
+        <activity
+            android:name=".BehaviorNestedExpandActivity"
+            android:label="SnackbarSamples"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

@@ -42,4 +42,8 @@ public class MainActivity extends BaseActivity {
         startActivity(new Intent(this, BehaviorNestedActivity.class));
     }
 
+    public void onClickBehaviorExpand(View v){
+        startActivity(new Intent(this, BehaviorNestedExpandActivity.class));
+    }
+
 }
