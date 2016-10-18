@@ -8,6 +8,10 @@
     <ListView
         android:id="@+id/lv_content"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_8"
+        android:clipToPadding="false"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"/>
 
 </LinearLayout>

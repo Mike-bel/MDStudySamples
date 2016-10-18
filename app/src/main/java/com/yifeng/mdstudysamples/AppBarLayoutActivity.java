@@ -38,12 +38,12 @@ public class AppBarLayoutActivity extends BaseActivity {
 
         @Override
         public ContentAdapter.ContentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return new ContentHolder(LayoutInflater.from(AppBarLayoutActivity.this).inflate(android.R.layout.simple_list_item_1, parent, false));
+            return new ContentHolder(LayoutInflater.from(AppBarLayoutActivity.this).inflate(R.layout.item_simple_list_1, parent, false));
         }
 
         @Override
         public void onBindViewHolder(ContentAdapter.ContentHolder holder, int position) {
-            holder.itemTv.setText("Item " + position);
+//            holder.itemTv.setText("Item " + position);
         }
 
         @Override
@@ -57,7 +57,7 @@ public class AppBarLayoutActivity extends BaseActivity {
 
             public ContentHolder(View itemView) {
                 super(itemView);
-                itemTv = (TextView) itemView.findViewById(android.R.id.text1);
+//                itemTv = (TextView) itemView.findViewById(android.R.id.text1);
             }
         }
 

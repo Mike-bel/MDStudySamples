@@ -7,7 +7,7 @@ import android.support.v4.view.ViewCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 /**
@@ -19,8 +19,6 @@ public class TabListFragment extends Fragment {
     private static final String EXTRA_CONTENT = "content";
 
     private ListView mContentLv;
-
-    private String[] contentArray = new String[20];
 
     public static TabListFragment newInstance(String content){
         Bundle arguments = new Bundle();
@@ -37,11 +35,32 @@ public class TabListFragment extends Fragment {
 
         mContentLv = (ListView) contentView.findViewById(R.id.lv_content);
         ViewCompat.setNestedScrollingEnabled(mContentLv, true);
-        for (int i = 0; i < contentArray.length; i++) {
-            contentArray[i] = "This is item " + i + " in " + getArguments().getString(EXTRA_CONTENT);
-        }
-        mContentLv.setAdapter(new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, contentArray));
+        mContentLv.setAdapter(new ContentAdapter());
 
         return contentView;
     }
+
+    private class ContentAdapter extends BaseAdapter{
+
+        @Override
+        public int getCount() {
+            return 10;
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            return LayoutInflater.from(getActivity()).inflate(R.layout.item_simple_list_2, null);
+        }
+    }
+
 }
