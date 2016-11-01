@@ -1,4 +1,4 @@
-package com.yifeng.mdstudysamples;
+package com.yifeng.mdstudysamples.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,6 +11,9 @@ import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.yifeng.mdstudysamples.R;
+import com.yifeng.mdstudysamples.fragment.TabContentFragment;
 
 import java.util.ArrayList;
 import java.util.List;

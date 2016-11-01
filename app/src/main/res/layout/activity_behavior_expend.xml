@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_56"
         android:layout_gravity="bottom"
-        app:layout_behavior=".CustomExpandBehavior"
+        app:layout_behavior=".behavior.CustomExpandBehavior"
         android:padding="8dp"
         android:background="@color/blue">
 

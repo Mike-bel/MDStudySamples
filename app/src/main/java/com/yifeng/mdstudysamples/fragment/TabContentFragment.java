@@ -1,4 +1,4 @@
-package com.yifeng.mdstudysamples;
+package com.yifeng.mdstudysamples.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.yifeng.mdstudysamples.R;
 
 /**
  * Created by yifeng on 16/8/3.

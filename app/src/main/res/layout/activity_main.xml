@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.yifeng.mdstudysamples.MainActivity">
+    tools:context="com.yifeng.mdstudysamples.activity.MainActivity">
 
     <include layout="@layout/include_toolbar" />
 
@@ -193,6 +193,7 @@
                     android:textSize="@dimen/sp_16" />
 
                 <View
+                    android:id="@+id/divider_tab_abl"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/px_1"
                     android:layout_below="@id/tv_label_abl"

@@ -1,8 +1,10 @@
-package com.yifeng.mdstudysamples;
+package com.yifeng.mdstudysamples.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.yifeng.mdstudysamples.R;
 
 public class MainActivity extends BaseActivity {
 

@@ -4,7 +4,6 @@
     android:id="@+id/tb_toolbar"
     android:layout_width="match_parent"
     android:layout_height="@dimen/dp_56"
-    app:titleTextColor="@color/white"
     app:title="@string/app_name"
     app:theme="@style/OverFlowMenuTheme"
     app:popupTheme="@style/AppTheme"

@@ -1,10 +1,11 @@
-package com.yifeng.mdstudysamples;
+package com.yifeng.mdstudysamples.utils;
 
 import android.content.Context;
 import android.widget.Toast;
 
 /**
  * Created by lxf on 16/8/7.
+ *
  */
 public class ToastUtils {
 

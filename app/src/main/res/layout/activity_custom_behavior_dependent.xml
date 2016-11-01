@@ -26,6 +26,6 @@
         fab:fab_icon="@mipmap/ic_toolbar_add"
         fab:fab_colorNormal="?attr/colorPrimary"
         fab:fab_colorPressed="?attr/colorPrimaryDark"
-        app:layout_behavior=".DependentFABBehavior"/>
+        app:layout_behavior=".behavior.DependentFABBehavior"/>
 
 </android.support.design.widget.CoordinatorLayout>

@@ -10,7 +10,7 @@
         android:theme="@style/Base.AppTheme">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,45 +20,59 @@
         </activity>
 
         <activity
-            android:name=".TabLayoutTopActivity"
+            android:name=".activity.TabLayoutTopActivity"
             android:label="TabLayoutSamples"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".TabLayoutBottomActivity"
+            android:name=".activity.TabLayoutBottomActivity"
             android:label="TabLayoutSamples"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".SnackbarActivity"
+            android:name=".activity.SnackbarActivity"
             android:label="SnackbarSamples"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".FabActivity"
+            android:name=".activity.FabActivity"
             android:label="SnackbarSamples"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".AppBarLayoutActivity"
+            android:name=".activity.AppBarLayoutActivity"
             android:label="SnackbarSamples"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
 
         <activity
-            android:name=".BehaviorNestedActivity"
+            android:name=".activity.BehaviorNestedActivity"
             android:label="SnackbarSamples"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".BehaviorDependentActivity"
+            android:name=".activity.BehaviorDependentActivity"
             android:label="SnackbarSamples"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".BehaviorNestedExpandActivity"
+            android:name=".activity.BehaviorNestedExpandActivity"
             android:label="SnackbarSamples"
             android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.SearchResultActivity"
+            android:label="@string/search_result"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+
+        </activity>
 
     </application>
 

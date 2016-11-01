@@ -1,4 +1,4 @@
-package com.yifeng.mdstudysamples;
+package com.yifeng.mdstudysamples.activity;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -18,6 +18,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import com.yifeng.mdstudysamples.R;
+import com.yifeng.mdstudysamples.fragment.TabListFragment;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.yifeng.mdstudysamples;
+package com.yifeng.mdstudysamples.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,22 +10,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.yifeng.mdstudysamples.R;
+
+import java.text.DecimalFormat;
+
 /**
  * Created by yifeng on 16/8/10.
  *
  */
-public class AppBarLayoutActivity extends BaseActivity {
+public class BehaviorNestedExpandActivity extends BaseActivity {
 
     private RecyclerView mContentRv;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_app_bar_layout);
+        setContentView(R.layout.activity_behavior_expend);
 
         mContentRv = (RecyclerView) findViewById(R.id.rv_content);
         mContentRv.setLayoutManager(new LinearLayoutManager(this));
         mContentRv.setAdapter(new ContentAdapter());
+
     }
 
     @Override
@@ -38,17 +43,17 @@ public class AppBarLayoutActivity extends BaseActivity {
 
         @Override
         public ContentAdapter.ContentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return new ContentHolder(LayoutInflater.from(AppBarLayoutActivity.this).inflate(R.layout.item_simple_list_1, parent, false));
+            return new ContentHolder(LayoutInflater.from(BehaviorNestedExpandActivity.this).inflate(android.R.layout.simple_list_item_1, parent, false));
         }
 
         @Override
         public void onBindViewHolder(ContentAdapter.ContentHolder holder, int position) {
-//            holder.itemTv.setText("Item " + position);
+            holder.itemTv.setText("Item "+new DecimalFormat("00").format(position));
         }
 
         @Override
         public int getItemCount() {
-            return 50;
+            return 100;
         }
 
         class ContentHolder extends RecyclerView.ViewHolder{
@@ -57,7 +62,7 @@ public class AppBarLayoutActivity extends BaseActivity {
 
             public ContentHolder(View itemView) {
                 super(itemView);
-//                itemTv = (TextView) itemView.findViewById(android.R.id.text1);
+                itemTv = (TextView) itemView.findViewById(android.R.id.text1);
             }
         }
 

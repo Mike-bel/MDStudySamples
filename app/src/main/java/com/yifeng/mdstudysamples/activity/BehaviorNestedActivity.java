@@ -1,4 +1,4 @@
-package com.yifeng.mdstudysamples;
+package com.yifeng.mdstudysamples.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.yifeng.mdstudysamples.R;
 
 import java.text.DecimalFormat;
 

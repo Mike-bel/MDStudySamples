@@ -1,10 +1,16 @@
-package com.yifeng.mdstudysamples;
+package com.yifeng.mdstudysamples.activity;
 
+import android.app.SearchManager;
+import android.app.Service;
+import android.content.ComponentName;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.View;
+
+import com.yifeng.mdstudysamples.R;
 
 /**
  * Created by yifeng on 16/8/10.
@@ -25,7 +31,12 @@ public class BehaviorDependentActivity extends BaseActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_samples, menu);
+        getMenuInflater().inflate(R.menu.menu_search, menu);
+
+        SearchManager searchManager = (SearchManager) getSystemService(Service.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(new ComponentName(this, SearchResultActivity.class)));
+
         return true;
     }
 

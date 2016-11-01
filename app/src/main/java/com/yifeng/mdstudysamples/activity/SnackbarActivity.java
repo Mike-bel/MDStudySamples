@@ -1,4 +1,4 @@
-package com.yifeng.mdstudysamples;
+package com.yifeng.mdstudysamples.activity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
+
+import com.yifeng.mdstudysamples.R;
+import com.yifeng.mdstudysamples.utils.ToastUtils;
 
 /**
  * Created by yifeng on 16/8/7.
