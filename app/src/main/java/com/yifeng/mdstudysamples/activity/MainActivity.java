@@ -48,4 +48,8 @@ public class MainActivity extends BaseActivity {
         startActivity(new Intent(this, BehaviorNestedExpandActivity.class));
     }
 
+    public void onClickTextInput(View v){
+        startActivity(new Intent(this, TextInputActivity.class));
+    }
+
 }

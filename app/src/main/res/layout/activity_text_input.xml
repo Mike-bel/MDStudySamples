@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_toolbar"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        app:counterEnabled="true"
+        app:counterMaxLength="11">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_mobile"
+            android:drawableStart="@mipmap/ic_mobile"
+            android:drawablePadding="@dimen/dp_4"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:hint="请输入手机号"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_password"
+            android:drawableStart="@mipmap/ic_password"
+            android:drawablePadding="@dimen/dp_4"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:inputType="textPassword"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_16"
+        android:onClick="onClickLogin"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:background="@color/blue"/>
+
+</LinearLayout>

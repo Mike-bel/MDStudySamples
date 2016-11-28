@@ -61,6 +61,11 @@
             android:screenOrientation="portrait"/>
 
         <activity
+            android:name=".activity.TextInputActivity"
+            android:label="TextInputLayout"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
             android:name=".activity.SearchResultActivity"
             android:label="@string/search_result"
             android:screenOrientation="portrait">
