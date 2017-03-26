@@ -52,4 +52,8 @@ public class MainActivity extends BaseActivity {
         startActivity(new Intent(this, TextInputActivity.class));
     }
 
+    public void onClickBottomNavigation(View v){
+        startActivity(new Intent(this, BottomNavigationActivity.class));
+    }
+
 }

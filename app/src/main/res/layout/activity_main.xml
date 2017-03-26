@@ -320,6 +320,48 @@
 
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/dp_16">
+
+                <TextView
+                    android:id="@+id/tv_label_navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:background="@drawable/shape_circle_blue"
+                    android:gravity="center"
+                    android:text="BN"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+                <Button
+                    android:id="@+id/btn_bottom_navigation"
+                    style="?borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_56"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_toRightOf="@+id/tv_label_navigation"
+                    android:background="@color/white"
+                    android:textColor="@color/state_press_black"
+                    android:gravity="left|center_vertical"
+                    android:onClick="onClickBottomNavigation"
+                    android:text="BottomNavigation"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_1"
+                    android:layout_below="@id/tv_label_navigation"
+                    android:layout_alignLeft="@id/btn_bottom_navigation"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@color/gray" />
+
+            </RelativeLayout>
+
         </LinearLayout>
 
     </ScrollView>

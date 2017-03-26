@@ -66,6 +66,11 @@
             android:windowSoftInputMode="stateHidden"/>
 
         <activity
+            android:name=".activity.BottomNavigationActivity"
+            android:label="BottomNavigation"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
             android:name=".activity.SearchResultActivity"
             android:label="@string/search_result"
             android:screenOrientation="portrait">
