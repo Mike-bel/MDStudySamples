@@ -40,6 +40,11 @@
             android:screenOrientation="portrait"/>
 
         <activity
+            android:name=".activity.PaletteDetailActivity"
+            android:label="SnackbarSamples"
+            android:screenOrientation="portrait"/>
+
+        <activity
             android:name=".activity.AppBarLayoutActivity"
             android:label="SnackbarSamples"
             android:screenOrientation="portrait"
