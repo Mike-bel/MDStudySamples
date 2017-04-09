@@ -36,7 +36,7 @@ BottomNavigation:
 - [Ashok-Varma/BottomNavigation](https://github.com/Ashok-Varma/BottomNavigation)
 - [aurelhubert/ahbottomnavigation](https://github.com/aurelhubert/ahbottomnavigation)
 
-### 关注作者微信公众号***［技术鸟］***
+### 关注我的微信公众号：安卓笔记侠
 ----
 ![技术鸟](http://open.weixin.qq.com/qr/code/?username=NiaoTech)
 
