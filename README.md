@@ -38,5 +38,6 @@ BottomNavigation:
 
 ### 关注我的微信公众号：安卓笔记侠
 ----
-![技术鸟](http://open.weixin.qq.com/qr/code/?username=NiaoTech)
+
+![](http://ocq7gtgqu.bkt.clouddn.com/NiaoTechNiaoTech_QRcode.jpg)
 
